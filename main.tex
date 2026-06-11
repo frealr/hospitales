@@ -9,72 +9,302 @@
 \usepackage{booktabs}
 \usepackage{amsmath}
 \usepackage{fancyhdr}
+\usepackage{xcolor}
+
+% Definición del comando para textos y tareas pendientes en rojo
+\newcommand{\todo}[1]{\textcolor{red}{#1}}
 
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
     filecolor=magenta,      
     urlcolor=cyan,
-    pdftitle={Memoria Técnica - Hospitales},
+    pdftitle={Memoria Técnica - Cafeterías y Vending},
     pdfpagemode=FullScreen,
 }
 
 \pagestyle{fancy}
 \fancyhf{}
-\rhead{Memoria Técnica}
-\lhead{Proyecto Hospitales}
+\rhead{\todo{[Nombre de la Concesionaria/Empresa - p. ej., Repostería Barroso S.L.]}}
+\lhead{Memoria Técnica - Cafeterías y Vending}
 \cfoot{\thepage}
-
-\title{
-    \vspace{2cm}
-    \Huge \textbf{Memoria Técnica de Proyecto} \\
-    \vspace{1cm}
-    \large Gestión y Optimización en Hospitales \\
-    \vspace{2cm}
-}
-\author{\textbf{Autor:} frealr \& Antigravity}
-\date{\today}
 
 \begin{document}
 
-\maketitle
+% ==========================================
+% PORTADA
+% ==========================================
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    {\Huge\bfseries Memoria Técnica de Adecuación y\\ Remodelación Estética\par}
+    \vspace{1.5cm}
+    {\Large\bfseries Espacios de Cafetería y Puntos de Vending\par}
+    \vspace{2cm}
+    {\large Hospital Universitario de San Lázaro \\ Hospital Universitario Virgen de la Macarena \\ Hospital Policlínico\par}
+    \vspace{4cm}
+    \vfill
+    {\large\bfseries Promotor:} \\
+    \todo{[Especificar Promotor - p. ej., Servicio Andaluz de Salud (SAS) o Concesionario]}\par
+    \vspace{0.8cm}
+    {\large\bfseries Redactor del Proyecto:} \\
+    \todo{[Especificar Nombre/Estudio Técnico/Empresa - p. ej., Departamento Técnico de Repostería Barroso]}\par
+    \vfill
+    {\large \today}
+\end{titlepage}
 
 \tableofcontents
 \newpage
 
-\chapter{Introducción}
-\section{Contexto del Proyecto}
-Este documento constituye la memoria técnica del proyecto de gestión y optimización de recursos en hospitales. Se describen los objetivos, el diseño del sistema y los resultados preliminares.
+% ==========================================
+% CAPÍTULO 1: MEMORIA DESCRIPTIVA GENERAL
+% ==========================================
+\chapter{Memoria Descriptiva General}
 
-\section{Objetivos}
+\section{Agentes del Proyecto}
+
+\subsection{Promotor del Proyecto}
+El promotor de las obras de remodelación estética es:
+\todo{[Completar con los datos del promotor: Razón Social (p. ej. Servicio Andaluz de Salud / Repostería Barroso S.L.), C.I.F., dirección fiscal del centro directivo, y representante legal.]}
+
+\subsection{Dirección Técnica y Profesionales Intervinientes}
+En el proceso de diseño, redacción y supervisión de las obras de adecuación estética intervienen los siguientes profesionales:
 \begin{itemize}
-    \item Optimizar la distribución de recursos hospitalarios.
-    \item Mejorar la eficiencia en el flujo de pacientes.
-    \item Diseñar un sistema de monitoreo en tiempo real.
+    \item \textbf{Redactor de la Memoria:} \todo{[Nombre del Técnico / Diseñador / Arquitector de Interiores, número de colegiado y colegio profesional si aplica]}.
+    \item \textbf{Director de la Ejecución:} \todo{[Nombre del Aparejador / Director de obra, colegio profesional y datos de contacto]}.
+    \item \textbf{Coordinador de Seguridad y Salud:} \todo{[Nombre del Coordinador o indicar "Sin establecer" o "Por designar por la contrata"]}.
 \end{itemize}
 
-\chapter{Descripción Técnica}
-\section{Arquitectura del Sistema}
-El sistema propuesto consta de varios módulos interconectados, diseñados para procesar datos en tiempo real.
+\subsection{Empresa Adjudicataria / Contratista}
+La ejecución de los trabajos de remodelación y la posterior explotación del servicio de cafeterías y vending correrá a cargo de la empresa:
+\todo{[Completar con los datos de la empresa adjudicataria, p. ej., Repostería Barroso S.L. / Serunion S.A., C.I.F., dirección fiscal y datos de contacto del responsable de zona.]}
 
-\section{Especificaciones de Hardware y Software}
-A continuación se detallan los requisitos técnicos del sistema:
+\section{Antecedentes y Objeto de la Memoria}
+El presente documento constituye la memoria técnica descriptiva y de acabados correspondiente al proyecto de remodelación estética, acondicionamiento y distribución de mobiliario en los espacios de cafeterías (tanto interiores como terrazas exteriores) y en los puntos de distribución de máquinas de venta automática (vending) de los complejos hospitalarios objeto del concurso de concesión.
+
+\todo{[Explicar de forma general el estado en el que se encontraban las cafeterías y zonas de descanso antes de la reforma: p. ej., obsolescencia de acabados, falta de uniformidad visual, necesidad de modernizar la imagen corporativa para mejorar la experiencia del personal sanitario y de los usuarios del hospital, y el objetivo de integrar de forma estética los puntos de vending.]}
+
+El alcance de las actuaciones comprende la sustitución de mobiliario obsoleto, la instalación de revestimientos modernos (suelos vinílicos, azulejos biselados, ladrillo visto decorativo), la mejora de la iluminación y la redecoración interior, además del despliegue ordenado de la maquinaria de vending según lo exigido por el pliego.
+
+\section{Emplazamientos Objeto de Actuación}
+Las actuaciones se llevan a cabo de forma coordinada en tres centros hospitalarios:
+\begin{enumerate}
+    \item \textbf{Hospital Universitario de San Lázaro:} Ubicado en \todo{[Dirección exacta, p. ej., Avenida Dr. Fedriani, s/n, Sevilla]}.
+    \item \textbf{Hospital Universitario Virgen de la Macarena:} Ubicado en \todo{[Dirección exacta, p. ej., Avenida Dr. Fedriani, 3, Sevilla]}.
+    \item \textbf{Hospital Policlínico:} Ubicado en \todo{[Dirección o área específica, p. ej., Consultas Externas del HUVM / Edificio Policlínico]}.
+\end{enumerate}
+
+\section{Descripción Geométrica y Programa de Necesidades}
+Los espacios objeto de remodelación se adaptan a la geometría y condiciones de los locales existentes en cada hospital, manteniendo su volumetría estructural original pero optimizando la compartimentación de las barras de servicio y el flujo peatonal en comedor.
+
+A continuación se resume el programa de superficies del proyecto:
+
 \begin{table}[h]
 \centering
-\begin{tabular}{lll}
+\begin{tabular}{llr}
 \toprule
-\textbf{Componente} & \textbf{Tecnología} & \textbf{Función} \\
+\textbf{Centro Hospitalario} & \textbf{Espacio / Zona de Actuación} & \textbf{Superficie Útil aprox. ($m^2$)} \\
 \midrule
-Base de Datos & PostgreSQL & Almacenamiento persistente \\
-Servidor Backend & Node.js / Python & Lógica de negocio y APIs \\
-Frontend & React / Next.js & Panel de control de usuarios \\
+Hospital San Lázaro & Cafetería Interior y Zona de Servicio & \todo{[Rellenar $m^2$]} \\
+Hospital San Lázaro & Puntos de Vending Distribuidos & \todo{[Rellenar $m^2$]} \\
+Hospital Macarena & Comedor Público Cafetería General & \todo{[Rellenar $m^2$]} \\
+Hospital Macarena & Zona de Conferencias / Reuniones & \todo{[Rellenar $m^2$]} \\
+Hospital Macarena & Puntos de Vending (General e Urgencias) & \todo{[Rellenar $m^2$]} \\
+Hospital Policlínico & Cafetería Consultas Externas (Interior) & \todo{[Rellenar $m^2$]} \\
+Hospital Policlínico & Terraza Exterior de Cafetería & \todo{[Rellenar $m^2$]} \\
+Hospital Policlínico & Puntos de Vending & \todo{[Rellenar $m^2$]} \\
 \bottomrule
 \end{tabular}
-\caption{Requisitos tecnológicos de la solución.}
-\label{tab:tecnologias}
+\caption{Resumen de superficies útiles y zonas de intervención.}
+\label{tab:superficies}
 \end{table}
 
-\chapter{Conclusiones y Trabajo Futuro}
-Se ha establecido la base del proyecto y se espera continuar con el desarrollo de los módulos de inteligencia artificial para la predicción de demanda de camas.
+\todo{[Indicar aquí las condiciones generales de los accesos a los comedores y las salidas de evacuación hacia el exterior, garantizando que el diseño y colocación del nuevo mobiliario no obstaculice las vías de escape del hospital de acuerdo a la normativa de incendios.]}
+
+
+% ==========================================
+% CAPÍTULO 2: HOSPITAL SAN LÁZARO
+% ==========================================
+\chapter{Hospital Universitario de San Lázaro}
+
+\section{Cafetería Interior}
+El espacio de cafetería del Hospital de San Lázaro ha sido diseñado con el propósito de maximizar la luminosidad natural proporcionada por el gran ventanal lateral. Se ha optado por una distribución que despeja los pasillos de evacuación y unifica los materiales.
+
+\todo{[Describir en este párrafo los trabajos específicos de obra menor y redecoración realizados en esta cafetería: p. ej., preparación de paredes, pintado con pintura mate en tonos claros, sustitución de las antiguas mesas y sillas oscuras, y la adecuación de la barra de obra, indicando si se ha panelado o pintado.]}
+
+\subsection{Mobiliario Instalado}
+Para la zona de cafetería interior se ha seleccionado el siguiente mobiliario homologado:
+\begin{itemize}
+    \item \textbf{Mesas Bajas:} Mesa DESSA de Resol. Mesa rectangular para uso interior y exterior. Medidas de $160 \times 90$ cm y 74 cm de altura. Peso 16.75 kg. Cuenta con sobre y patas inyectadas en polipropileno de alta resistencia en color blanco y una estructura interna de acero zincado pintado por pulverización que le otorga rigidez y estabilidad. Diseñada por Josep Lluscà.
+    \item \textbf{Sillas Bajas:} Silla confidente Actiu Noom (Serie 50). Dispone de una estructura con base de patín fabricada en tubo cilíndrico de acero laminado de 16 mm de diámetro con acabado en pintura epoxi blanca. La carcasa está fabricada en polipropileno de alta resistencia con 5 mm de espesor y fibra de vidrio, con un diseño ergonómico de líneas fluidas. Incorpora conteras de polipropileno antideslizantes. \todo{[Detallar el color de la carcasa seleccionado, y si se ha optado por el asiento tapizado o de polipropileno visto]}.
+\end{itemize}
+
+\subsection{Distribución en Planta}
+La disposición en planta del mobiliario consiste en la colocación de un total de \todo{[número de mesas]} mesas y \todo{[número de sillas]} sillas bajas de confidente Noom, organizadas en filas paralelas al muro cortina de vidrio, garantizando un pasillo central libre de obstáculos de al menos \todo{[medida del pasillo, p. ej., 1.50 metros]} para cumplir con las condiciones de accesibilidad y evacuación.
+
+\section{Servicio de Vending}
+En cumplimiento con el Pliego de Prescripciones Técnicas (PPT), en el Hospital de San Lázaro se ha previsto la instalación de un total de \textbf{8 máquinas expendedoras automáticas}, las cuales se distribuyen en las siguientes tipologías:
+\begin{itemize}
+    \item \textbf{Máquinas de Bebidas Calientes:} 3 unidades.
+    \item \textbf{Máquinas de Bebidas Frías (Refrescos y Agua):} 5 unidades.
+\end{itemize}
+
+\todo{[Describir en este párrafo las ubicaciones exactas de estas 8 máquinas dentro del hospital (p. ej., vestíbulo principal, planta 1 frente a quirófanos, sala de espera de urgencias, etc.). Explicar cómo se han decorado e integrado estéticamente estas áreas de descanso, por ejemplo, mediante el encastrado de las máquinas en un mueble de pladur o panelado de madera, la instalación de iluminación lineal LED en la parte superior, o la colocación de vinilos decorativos en la pared con el lema del centro.]}
+
+
+% ==========================================
+% CAPÍTULO 3: HOSPITAL VIRGEN DE LA MACARENA
+% ==========================================
+\chapter{Hospital Universitario Virgen de la Macarena}
+
+\section{Cafetería General - Comedor Público}
+La cafetería general del Hospital Virgen de la Macarena cuenta con una amplia zona de comedor que ha sido renovada estéticamente bajo un concepto industrial cálido. Se combinan paramentos que imitan el ladrillo visto con revestimientos de listones de madera natural y un solado vinílico de alta densidad.
+
+\todo{[Explicar en este párrafo los trabajos decorativos y constructivos realizados en el comedor principal: p. ej., el desmontaje del solado anterior y colocación del suelo vinílico efecto roble, el tratamiento de las columnas redondas, el panelado de madera de listones en los paramentos laterales, y el revestimiento cerámico en la pared del autoservicio.]}
+
+\subsection{Barra de Obra Panelada}
+\todo{[Describir la ejecución y el diseño de la barra de servicio: p. ej., construcción del núcleo de la barra mediante tabiquería de ladrillo / cartón-yeso, descripción del tipo de panelado exterior en madera que la reviste, y el material seleccionado para la encimera o encimera de trabajo (p. ej., encimera de resina sintética Krion / Corian en color blanco).]}
+
+\subsection{Mobiliario Instalado}
+El espacio se ha dividido en dos zonas funcionales (comedor de mesas bajas y zona de mesas altas tipo snack):
+\begin{itemize}
+    \item \textbf{Zona de Mesas Bajas (Comedor):}
+    \begin{itemize}
+        \item \textbf{Mesas Bajas:} Mesa DESSA de Resol. Rectangular en color blanco, medidas $160 \times 90$ cm.
+        \item \textbf{Sillas Bajas:} Silla confidente Actiu Noom (Serie 50) con estructura en base patín de color blanco y carcasa ergonómica de polipropileno.
+    \end{itemize}
+    \item \textbf{Zona de Taburetes y Mesas Altas:}
+    \begin{itemize}
+        \item \textbf{Mesas Altas:} Mesa alta de bar ( Makro / METRO). Altura total de 110 cm, provista de un pie central metálico de acero con recubrimiento blanco y un tablero circular de madera laminada resistente a roces.
+        \item \textbf{Sillas Altas (Taburetes):} Pack de 4 taburetes altos de jardín apilables Brenza (SKLUM). Fabricados en polipropileno de alta resistencia con acabado mate. Altura total de 101 cm, anchura de 43.5 cm y una altura de asiento de 75 cm. Cuenta con patas cilíndricas cónicas y tacos protectores de suelo. \todo{[Especificar el color de los taburetes seleccionado para esta zona, p. ej., gris grafito / terracota / marrón moka.]}
+    \end{itemize}
+\end{itemize}
+
+\section{Zona de Conferencias}
+Anexa al área administrativa y de cafetería, se ha condicionado una zona dedicada a reuniones y conferencias, la cual requiere un ambiente formal y una acústica controlada.
+
+\todo{[Describir aquí las actuaciones en la zona de conferencias: p. ej., el pintado de las paredes con pintura fonoabsorbente o colores neutros, la iluminación lineal regulable instalada y la disposición del cableado.]}
+
+\subsection{Mobiliario de Conferencias}
+\begin{itemize}
+    \item \textbf{Mesa de Reuniones Larga:} Mesa de reuniones doble Kube de Ofiprix. Dimensiones de $240 \times 142$ cm con una encimera continua de melamina de 30 mm de espesor y cantos de PVC antichoque en color blanco mate. Cuenta con una estructura metálica blanca de acero laminado con patas centrales retranqueadas para mejorar el espacio inferior de las piernas, doble pasacables de 80 mm de diámetro para organizar la electrificación de los equipos y niveladores ABS de suelo.
+    \item \textbf{Sillas:} Silla confidente Actiu Noom (Serie 50) con base patín blanca y carcasa ergonómica.
+\end{itemize}
+
+\section{Servicio de Vending}
+El despliegue de las máquinas expendedoras automáticas de venta de alimentos y bebidas en los centros del ámbito Macarena se realiza de acuerdo a los mapas indicados en el Pliego (total de 44 máquinas), clasificados de la siguiente manera:
+
+\subsection{Hospital Universitario Virgen de la Macarena - General}
+Se ubican un total de \textbf{42 máquinas} distribuidas en las siguientes dependencias del edificio general:
+\begin{itemize}
+    \item \textbf{Bebidas Calientes (Café y Té):} 11 unidades.
+    \item \textbf{Bebidas Frías (Aguas, Zumos, Refrescos):} 24 unidades.
+    \item \textbf{Sólidos / Comidas (Snacks, Sándwiches, Frutos Secos):} 7 unidades.
+\end{itemize}
+
+\todo{[Detallar por plantas o zonas principales del hospital la ubicación de estas 42 máquinas: p. ej., salas de espera de consultas externas, pasillos de acceso a plantas de hospitalización, vestíbulo de consultas generales, etc. Describir la personalización estética de estos puntos de vending.]}
+
+\subsection{Hospital Universitario Virgen de la Macarena - Urgencias}
+Se sitúan un total de \textbf{2 máquinas} en el área de Urgencias para dar servicio continuo las 24 horas:
+\begin{itemize}
+    \item \textbf{Bebidas Calientes (Café):} 1 unidad.
+    \item \textbf{Sólidos / Comidas (Snacks y Sándwiches):} 1 unidad.
+\end{itemize}
+
+\todo{[Describir la ubicación exacta de las dos máquinas de Urgencias (sala de espera de familiares / vestíbulo de admisión de urgencias) y cómo se ha integrado estéticamente su contorno.]}
+
+
+% ==========================================
+% CAPÍTULO 4: HOSPITAL POLICLÍNICO
+% ==========================================
+\chapter{Hospital Policlínico}
+
+\section{Cafetería Interior (Consultas Externas)}
+La cafetería interior del Policlínico da servicio a un alto volumen de pacientes externos diarios. El diseño se enfoca en la máxima eficiencia espacial y facilidad de limpieza, manteniendo la coherencia estética con la marca corporativa general.
+
+\todo{[Describir en este párrafo los trabajos de adecuación estética realizados en el interior de la cafetería del Policlínico: p. ej., el desmontaje del falso techo antiguo por placas acústicas, la pintura plástica mate en paredes, el panelado de listones de madera en barra, y la cantidad de mesas y sillas colocadas.]}
+
+\subsection{Mobiliario Instalado}
+El mobiliario para el espacio de comedor interior consta de:
+\begin{itemize}
+    \item \textbf{Mesas Bajas:} Mesa DESSA de Resol. Mesa rectangular en color blanco, de $160 \times 90$ cm.
+    \item \textbf{Sillas Bajas:} Silla confidente Actiu Noom (Serie 50) con base patín de color blanco y carcasa de poliopropileno.
+\end{itemize}
+
+\section{Terraza Exterior (Consultas Externas)}
+La terraza exterior del Policlínico se concibe como una zona de escape y descanso al aire libre. La actuación estética combina el uso de césped artificial con paramentos exteriores panelados y setos vegetales artificiales para crear un ambiente natural y acogedor.
+
+\todo{[Describir los trabajos exteriores ejecutados en la terraza del Policlínico: p. ej., la colocación del suelo de césped artificial sobre el pavimento original, el revestimiento de la fachada con paneles exteriores en color rojo, el montaje de la pared divisoria vegetal para ocultar las instalaciones colindantes, y la colocación del mobiliario exterior.]}
+
+\subsection{Mobiliario de Terraza}
+Para soportar el uso a la intemperie, se ha seleccionado mobiliario con alta resistencia UV y drenaje:
+\begin{itemize}
+    \item \textbf{Sillas Bajas de Exterior:} Silla Brenza (SKLUM). Silla de jardín apilable fabricada en polipropileno de alta resistencia con acabado mate. Sus dimensiones son $78 \times 48 \times 51$ cm. Cuenta con patas cilíndricas cónicas y tacos protectores. \todo{[Detallar el color de la silla de exterior Brenza seleccionado para esta terraza, p. ej., verde caqui / blanco piedra / terracota.]}
+    \item \textbf{Mesas Bajas de Exterior Rectangulares:} Mesa DESSA de Resol. Mesa rectangular blanca de $160 \times 90$ cm con estructura interna de acero zincado con recubrimiento anticorrosión.
+    \item \textbf{Mesas Bajas de Exterior Cuadradas:} Mesa DESSA de Resol. Mesa cuadrada blanca de $90 \times 90$ cm y 74 cm de altura. Peso 12.5 kg. Cuenta con sobre y patas inyectadas en polipropileno blanco con protección UV y estructura interior de acero zincado. Josep Lluscà design.
+\end{itemize}
+
+\section{Servicio de Vending}
+En el Hospital Policlínico, el Pliego de Prescripciones Técnicas establece la instalación de un total de \textbf{2 máquinas expendedoras}:
+\begin{itemize}
+    \item \textbf{Bebidas Calientes (Café):} 1 unidad.
+    \item \textbf{Bebidas Frías (Refrescos y Agua):} 1 unidad.
+\end{itemize}
+
+\todo{[Describir la ubicación física de estas 2 máquinas en la cafetería o en los vestíbulos comunes del Policlínico, y el tipo de mueble protector o vinilado instalado para mejorar su integración visual.]}
+
+
+% ==========================================
+% CAPÍTULO 5: PROPUESTA Y FICHAS DE ACABADOS
+% ==========================================
+\chapter{Propuesta y Fichas de Acabados Estéticos}
+En este capítulo se recopilan las propuestas técnicas de materiales y acabados sugeridas a partir del estudio visual del proyecto de cafeterías, sirviendo de base homogénea para la redacción de las especificaciones de cada hospital.
+
+\section{Techos y Aislamientos Acústicos}
+Se establecen dos tipos de falso techo según las condiciones de la sala:
+\begin{itemize}
+    \item \textbf{Falso Techo Registrable Acústico (Comedores y Barra):} Placas modulares de escayola o fibra mineral perforada acústica, tipo \textit{Knauf Danoline} (modelo Plaza o Belgravia, de $60 \times 60$ cm, acabado en pintura blanca mate, con absorción acústica y resistencia al fuego A2-s1, d0). Permite registrar las instalaciones de climatización e iluminación de forma rápida.
+    \item \textbf{Falso Techo Continuo (Accesos y Zonas Comunes):} Placa de yeso laminado tipo \textit{Pladur} o \textit{Placo} (espesor 13 mm) suspendida mediante estructura oculta de acero galvanizado, con juntas selladas y acabado pintado en color blanco mate liso.
+\end{itemize}
+
+\section{Revestimientos de Suelo (Solados)}
+Se proponen tres soluciones específicas según el área de uso:
+\begin{itemize}
+    \item \textbf{Suelo Interior Vinílico de Madera (Comedor General):} Suelo LVT (Luxury Vinyl Tiles) heterogéneo en lamas de la gama \textit{Tarkett iD Inspiration} (o similar de \textit{Gerflor}), acabado imitación madera de roble natural (\textit{Natural Oak} o similar), con tratamiento de protección de poliuretano Purves y clase de uso comercial intenso 34/43. Proporciona una excelente calidez visual con resistencia al desgaste hospitalario y fácil desinfección.
+    \item \textbf{Solado Interior Porcelánico (Cafeterías y San Lázaro):} Baldosas de gres porcelánico de gran formato (tipo \textit{Porcelanosa} o \textit{Marazzi}), formato rectangular de $60 \times 30$ cm o $60 \times 60$ cm, acabado mate antideslizante R9, en color gris cemento o beige suave. Colocado con adhesivo cementoso de alta adherencia tipo C2TE y junta mínima de 2 mm rejuntada con material cementoso anti-moho.
+    \item \textbf{Suelo de Terraza Exterior (Policlínico):} Césped artificial de alta gama tipo \textit{Tarkett Turf} o similar (modelo de 35 o 40 mm de altura de pelo), con hilos monofilamento de polietileno con tratamiento anti-UV y base de poliuretano con orificios de drenaje para evitar encharcamientos rápidos (capacidad mín. 60 l/min/$m^2$).
+\end{itemize}
+
+\section{Luminarias e Iluminación Decorativa}
+Se diseña un sistema lumínico eficiente y con alto confort visual (bajo deslumbramiento, UGR $<$ 19):
+\begin{itemize}
+    \item \textbf{Iluminación General (Empotrada):} Luminaria Downlight LED circular de la marca \textit{Arkoslight} (modelo Swap o similar, potencia 7W o 10W, flujo luminoso aprox. 900 lm, temperatura de color blanco cálido de 3000K, cuerpo de aluminio lacado en blanco y difusor opalizado).
+    \item \textbf{Iluminación Decorativa Suspendida - Tipo Campana (Barra y Comedor):} Lámparas colgantes tipo campana industrial de diámetro 30 cm en metal acabado negro mate exterior e interior pintado en pan de oro o latón reflectante. Equipadas con bombillas LED de filamento visto y luz extra-cálida (2700K).
+    \item \textbf{Iluminación Decorativa Suspendida - Natural (Comedor y Cafetería):} Lámparas colgantes con pantallas tejidas artesanalmente de mimbre, ratán o esparto natural, que filtran la luz creando una textura suave y acogedora en las zonas de descanso.
+\end{itemize}
+
+\section{Revestimientos y Decoración de Paredes}
+Para dotar de dinamismo visual a los espacios de restauración, se plantean tres acabados en paramentos verticales:
+\begin{itemize}
+    \item \textbf{Muro de Ladrillo Caravista Decorativo:} Paneles decorativos de poliuretano de alta densidad imitación ladrillo envejecido tipo \textit{Panel Piedra} (grosor aprox. 2-3 cm, acabado rústico en tonos tierra y rojizos), fijados mediante tacos y resinas a la pared de soporte y rejuntados para lograr un acabado realista.
+    \item \textbf{Alicatado de Azulejo tipo Metro (Zonas de Servicio y Preparación):} Azulejo cerámico esmaltado monococción de formato $10 \times 20$ cm biselado en color blanco brillante (tipo azulejo metro), colocado a rompejuntas (tresbolillo) con junta de 2 mm en color gris oscuro/antracita para resaltar la geometría.
+    \item \textbf{Panelado Alistonado de Madera:} Paneles acústicos decorativos formados por listones verticales de madera MDF rechapados en roble natural de $24 \times 12$ mm, montados sobre una base de fieltro fonoabsorbente de poliéster reciclado de color negro (espesor de panel total aprox. 20 mm, similar a \textit{Woodupp} o \textit{Decustik}).
+\end{itemize}
+
+\section{Barras de Servicio Paneladas de Obra}
+Las barras de servicio se configuran con un sistema de obra resistente y un revestimiento premium:
+\begin{itemize}
+    \item \textbf{Estructura Base:} Tabiquería de fábrica de ladrillo cerámico hueco doble recibido con mortero de cemento, o estructura autoportante de perfiles metálicos y doble placa de yeso laminado hidrófugo (placa verde pladur) de 15 mm.
+    \item \textbf{Panelado Exterior:} Revestimiento vertical mediante tableros de MDF rechapados en madera de roble claro, protegidos con barniz de poliuretano transparente de dos componentes con acabado extra-mate y anti-huellas.
+    \item \textbf{Encimera de Trabajo y Servicio:} Superficie sólida mineral (Solid Surface) tipo \textit{Krion} de Porcelanosa o \textit{Corian} de DuPont, espesor 12 mm, color blanco liso (modelo *Snow White* o similar), instalada con adhesivos acrílicos de dos componentes del mismo color para eliminar juntas visibles, facilitando la desinfección higiénica diaria.
+\end{itemize}
+
+\section{Pinturas y Colores Corporativos}
+Se empleará pintura plástica mate lavable de alta cubrición de marcas profesionales como \textit{Jotun} (gama Majestic Resist) o \textit{Valentine} (gama Valón Extramate), con certificado de baja emisión de compuestos orgánicos volátiles (COVs) e idoneidad para uso sanitario:
+\begin{itemize}
+    \item \textbf{Blanco Roto / Hueso:} Color base de paramentos generales para potenciar la luminosidad.
+    \item \textbf{Gris Neutro:} Utilizado en muros de transición y fondos decorativos.
+    \item \textbf{Verde Lima Corporativo:} Empleado para acentuar paredes singulares en las zonas de acceso a cafetería y puntos de vending (según la marca \textit{Serunion Salud} o similar).
+\end{itemize}
 
 \end{document}
