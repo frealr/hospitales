@@ -1,0 +1,80 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Memoria Técnica - Hospitales},
+    pdfpagemode=FullScreen,
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Memoria Técnica}
+\lhead{Proyecto Hospitales}
+\cfoot{\thepage}
+
+\title{
+    \vspace{2cm}
+    \Huge \textbf{Memoria Técnica de Proyecto} \\
+    \vspace{1cm}
+    \large Gestión y Optimización en Hospitales \\
+    \vspace{2cm}
+}
+\author{\textbf{Autor:} frealr \& Antigravity}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+\chapter{Introducción}
+\section{Contexto del Proyecto}
+Este documento constituye la memoria técnica del proyecto de gestión y optimización de recursos en hospitales. Se describen los objetivos, el diseño del sistema y los resultados preliminares.
+
+\section{Objetivos}
+\begin{itemize}
+    \item Optimizar la distribución de recursos hospitalarios.
+    \item Mejorar la eficiencia en el flujo de pacientes.
+    \item Diseñar un sistema de monitoreo en tiempo real.
+\end{itemize}
+
+\chapter{Descripción Técnica}
+\section{Arquitectura del Sistema}
+El sistema propuesto consta de varios módulos interconectados, diseñados para procesar datos en tiempo real.
+
+\section{Especificaciones de Hardware y Software}
+A continuación se detallan los requisitos técnicos del sistema:
+\begin{table}[h]
+\centering
+\begin{tabular}{lll}
+\toprule
+\textbf{Componente} & \textbf{Tecnología} & \textbf{Función} \\
+\midrule
+Base de Datos & PostgreSQL & Almacenamiento persistente \\
+Servidor Backend & Node.js / Python & Lógica de negocio y APIs \\
+Frontend & React / Next.js & Panel de control de usuarios \\
+\bottomrule
+\end{tabular}
+\caption{Requisitos tecnológicos de la solución.}
+\label{tab:tecnologias}
+\end{table}
+
+\chapter{Conclusiones y Trabajo Futuro}
+Se ha establecido la base del proyecto y se espera continuar con el desarrollo de los módulos de inteligencia artificial para la predicción de demanda de camas.
+
+\end{document}
