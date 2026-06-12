@@ -4,6 +4,11 @@
 \usepackage{geometry}
 \geometry{a4paper, margin=2.5cm}
 \usepackage{graphicx}
+\usepackage{float}
+\floatplacement{figure}{H}
+\let\origfigure\figure
+\let\endorigfigure\endfigure
+\renewenvironment{figure}[1][H]{\origfigure[H]}{\endorigfigure}
 \usepackage{hyperref}
 % \usepackage{titlesec}
 \usepackage{booktabs}
@@ -474,22 +479,22 @@ A continuación se detallan las especificaciones técnicas y dimensiones del mob
     \item \textbf{Mesa Rectangular Resol DESSA (160x90 cm):} 
     Diseñada por Josep Lluscà. Mesa rectangular de comedor con estructura interior de acero zincado pintado por pulverización en color blanco y sobre y patas inyectadas en polipropileno copolímero de alta resistencia, con tratamiento anti-UV para evitar la decoloración. Dimensiones: 160 cm de largo, 90 cm de ancho y 74 cm de altura. Peso neto: 16.75 kg. Certificaciones de resistencia para uso público intenso (UNE-EN 15372). Ficha de producto disponible en el \href{https://www.makro.es/marketplace/product/903d3d04-0dd5-4579-93cb-b7091788f8ad}{Sitio web}. \\ \textbf{Uso en la memoria:} Cafeterías interiores de San Lázaro (Ap. 2.1), Policlínico (Ap. 3.1) y Macarena General (Ap. 4.1).
 
- \begin{figure}
-     \centering
-     \includegraphics[width=0.5\linewidth]{MESARECTANGULAR.png}
-     \caption{Mesa rectangular Resol Dessa}
-     \label{fig:placeholder}
- \end{figure}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\linewidth]{MESARECTANGULAR.png}
+        \caption{Mesa rectangular Resol Dessa}
+        \label{fig:mesarectangular}
+    \end{figure}
 
     \item \textbf{Silla Confidente Actiu Noom (Serie 50 - Base Patín):} 
     Diseñada por Alegre Design. Silla confidente ligera y ergonómica sin brazos, de respaldo alto. Estructura de base patín fabricada en tubo cilíndrico de acero laminado en caliente de 13 mm de diámetro y 2 mm de espesor, con recubrimiento de pintura epoxi de 90 micras de espesor en color blanco mate. Carcasa inyectada de polipropileno (P.P.) de 5 mm de espesor reforzado con fibra de vidrio, con acabado texturado antideslizante. Conteras de polipropileno con fieltro antideslizante integrado. Dimensiones totales: Altura de 836 mm, anchura de 522 mm y profundidad de 543 mm. Dimensiones del asiento: Altura de 473 mm, anchura de 443 mm y profundidad de 519 mm. Certificada para uso intensivo en oficinas y colectividades (UNE-EN 16139). Ficha de producto disponible en el \href{https://spacio.es/producto/sillas/sillas-confidente/sillas-para-hogar/silla-confidente-base-patin-actiu-noom-serie-50/?srsltid=AfmBOoro-D21eeNqrwztycS8rSaA7fgDVHFSJ8n9pnpir-qXSPCX6CfS}{Sitio Web de Spacio}. \\ \textbf{Uso en la memoria:} Cafeterías interiores de San Lázaro (Ap. 2.1), Policlínico (Ap. 3.1) y Macarena General (Ap. 4.1).
 
- \begin{figure}
-     \centering
-     \includegraphics[width=0.5\linewidth]{sillaconfidente.png}
-     \caption{sillaconfidente}
-     \label{fig:placeholder}
- \end{figure}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\linewidth]{sillaconfidente.png}
+        \caption{Silla confidente Actiu Noom Serie 50}
+        \label{fig:sillaconfidente}
+    \end{figure}
     \item \textbf{Mesa Cuadrada Resol DESSA (90x90 cm):} 
     Diseñada por Josep Lluscà. Mesa cuadrada de comedor exterior con estructura interior de acero zincado y sobre y patas inyectadas en polipropileno de alta densidad en color blanco, con tratamiento anti-UV. Dimensiones: 90 cm de largo, 90 cm de ancho y 74 cm de altura. Peso neto: 12.5 kg. Certificaciones de resistencia para uso público exterior (UNE-EN 581). Ficha de producto disponible en el \href{https://www.makro.es/marketplace/product/3b3239d9-ee56-46d0-be31-6512a1e75539}{Sitio Web de Makro}. \\ \textbf{Uso en la memoria:} Terraza exterior del Policlínico (Ap. 3.2).
     
